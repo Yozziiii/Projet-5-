@@ -1,0 +1,87 @@
+.parent {
+    width: 100%;
+    height: 15%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+img.imgTop {
+    filter: brightness(50%);
+    object-fit: cover;
+    box-sizing: border-box;
+    width: 100%;
+    height: 220px;
+    border-radius: 20px;
+}
+
+.parent span {
+    position: absolute;
+    top: 50%;   
+    left: 50%;  
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+
+.logement {
+    background-color: #F6F6F6;
+    max-width: 1240px;
+    display: flex;
+    gap: 55px;
+    flex-wrap: wrap;
+    height: 75%;
+    padding: 35px 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.logement div {
+    display: flex;
+    width: 30%;
+    height: 340px;
+    position: relative;
+}
+
+.logement div img {
+    border-radius: 20px;
+    object-fit: cover;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.logement div span {
+    position: absolute;
+    bottom: 10%;   
+    left: 5%;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+@media (max-width: 767.98px) and (min-width: 375px) {
+
+.parent span {
+    text-align: start;
+    left: 35%;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+img.imgTop {
+    height: 120px;
+}
+
+.logement {
+    flex-direction: column;
+    min-width: 335px;
+}
+
+.logement div  {
+    width: 100%;
+}
+
+
+}

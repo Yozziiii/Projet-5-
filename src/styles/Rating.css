@@ -1,0 +1,11 @@
+.info .hostAndRating .Rating {
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info .hostAndRating .Rating img.stars {
+    height: 30px;
+    width: 30px;
+}
