@@ -2,7 +2,7 @@ import React from "react";
 import Prev from '../assets/prev.png'
 import Next from '../assets/next.png'
 import {useState} from "react";
-import '../styles/Carousel.css'
+import '../styles/Carousel.scss'
 
 export default function Carousel(props) {
     const pictures = props.pictures
@@ -25,7 +25,9 @@ export default function Carousel(props) {
     return (
     
         <div className="carouselComponent">    
-            <img className="img" src={pictures[i]} alt={title} /> 
+            <div className="carouselPicture" style={{transform:`translateX(-${i * 100}%)`}}>
+           {pictures.map((picture, key) =>  <img className="img" key={key} src={picture} alt={title} /> )}
+            </div>  
             
             {pictures.length > 1 && (
             <>

@@ -1,7 +1,7 @@
 import React from "react";
 import BkHome from '../assets/backgroundHome.png'
 import Logements from "../data/data.json"
-import '../styles/Home.css'
+import '../styles/Home.scss'
 import { Link } from "react-router-dom"
 
 export default function Home(){
@@ -17,7 +17,7 @@ export default function Home(){
         </div>        
         ));
     }
-    console.log("logement :" +  Logement)
+    console.log("logement :" +  Logement())
 
 
     return (

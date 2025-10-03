@@ -1,0 +1,26 @@
+.info .hostAndRating .Rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 36px;
+    
+    
+    img.stars {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 767.98px) and (min-width: 375px)  {
+    .info .hostAndRating .Rating {
+        
+        width: fit-content;
+        height: fit-content;
+
+        img.stars {
+            height: 25px;
+            width: 25px;
+        }
+    }
+    
+}

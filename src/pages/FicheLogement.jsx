@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router";
 import Logements from "../data/data.json"
-import '../styles/FicheLogement.css'    
+import '../styles/FicheLogement.scss'    
 import Carousel from "../components/Carousel";
 import TextBox from "../components/TextBox";
 import Rating from "../components/Rating";
@@ -37,8 +37,8 @@ export default function FicheLogement(){
                 <Rating rating={logement.rating}/>
             </div>
             <div className="parentDescription">
-            <TextBox title="Description" content={logement.description} ></TextBox>
-            <TextBox className="textBoxEquipement" title="équipement" content={logement.equipments} ></TextBox>
+            <TextBox className="textBox" title="Description" content={logement.description} ></TextBox>
+            <TextBox className="textBox" title="Équipements" content={logement.equipments} ></TextBox>
             </div>
         </div>
     </main>

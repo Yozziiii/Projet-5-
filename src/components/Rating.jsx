@@ -1,7 +1,7 @@
 import React from "react";
 import StarAct from '../assets/red-stars.png'
 import StarIna from '../assets/grey-stars.png'
-import '../styles/Rating.css'
+import '../styles/Rating.scss'
 
 export default function Rating (props) {
     let Scale = [1,2,3,4,5]

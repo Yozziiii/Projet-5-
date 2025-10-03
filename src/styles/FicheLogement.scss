@@ -1,0 +1,176 @@
+main div {
+    display: flex;
+}
+
+main .carousel {
+    width: 100%;
+    max-height: 400px;
+
+    img {
+        border-radius: 20px;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+}
+
+main .info {
+    display: flex;
+    min-width: fit-content;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-flow: row wrap;
+    margin-top: 15px;
+    
+    .titleLocTag {
+        display: flex;
+        min-width: min-content;
+        max-width: 50%;
+        width: 50%;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    
+    .title {
+        color: #FF6060;
+        font-weight: 500;
+        font-size: 36px;
+        margin: 0;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    
+    .location {
+        font-weight: 500;
+        font-size: 18px;
+        margin: 0;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+        min-width: max-content;
+    }
+    
+    .tag {
+        height: fit-content;
+        min-width: fit-content;
+        list-style: none;
+        color: white;
+        background-color: #FF6060;
+        font-weight: 700;
+        font-size: 14px;
+        padding: 5px 25px;
+        border-radius: 15px;
+        margin: 0;
+    }
+    
+    .hostAndRating {
+        min-width: fit-content;
+        width: fit-content;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-between;
+    }
+    
+    .hostAndRating div {
+        gap: 20px;
+    }
+    
+    .hostAndRating p {
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .hostAndRating img {
+        border-radius: 45%;
+        width: 64px;
+        height: 64px;
+    }
+}
+
+
+.description span:last-of-type {
+    display: none;
+}
+
+.Equipements ul {
+    display: none;
+}
+
+.parentDescription {
+    margin-top: 30px;
+    gap: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 767.98px) and (min-width: 375px) {
+    
+   main {   
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  
+    .info {
+            flex-direction: column;
+            .titleLocTag { 
+                width: fit-content;
+
+                .title {
+                    font-size: 20px;
+                }
+                
+                .location {
+                    font-size: 15px;
+                }
+                
+                .tag {
+                    font-size: 13px;
+                }
+            }
+            
+            .hostAndRating{
+                margin-top: 30px;
+                width: 100%;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                
+                p {
+                    font-size: 15px;
+                }
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+                .Rating {
+
+                    img.stars {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+            
+            .parentDescription {
+                margin-top: 20px;
+                flex-direction: column;
+                
+                .slideC {
+
+                    h3 {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

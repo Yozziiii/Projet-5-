@@ -1,4 +1,4 @@
-import '../styles/Header.css'
+import '../styles/Header.scss'
 import KasaLog from '../assets/kasaLog.svg'
 import { Link } from "react-router-dom"
 

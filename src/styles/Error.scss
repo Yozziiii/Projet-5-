@@ -1,0 +1,29 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 90px;
+    
+    h1 {
+        margin: 0;
+        font-size: 280px;
+        font-weight: 700;
+    }
+    
+    h2 {
+        font-size: 36px;
+        font-weight: 500;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    
+    h1, h2 {
+        color: #FF6060;
+    }
+    
+    a {
+        font-size: 18px;
+        color: black;
+    }
+}
+

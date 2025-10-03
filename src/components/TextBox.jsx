@@ -1,6 +1,6 @@
 import React from "react";
 import {useState} from "react";
-import  '../styles/TextBox.css'
+import  '../styles/TextBox.scss'
 import Arrow from '../assets/arrow.png'
 
 export default function TextBox ({title, content}) {
@@ -25,7 +25,7 @@ export default function TextBox ({title, content}) {
                     ))}
                 </ul>
                 )  : (
-                    
+
                 <p>{content}</p>
                
                )}
