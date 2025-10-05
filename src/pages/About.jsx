@@ -1,6 +1,6 @@
 import React from "react";
 import TextBox from "../components/TextBox";
-import '../styles/About.css'
+import '../styles/About.scss'
 import BkAbout from '../assets/imgAbout.png'
 
 export default function About(){
